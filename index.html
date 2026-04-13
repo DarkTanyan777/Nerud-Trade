@@ -1,72 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="НерудТрейд - продажа и доставка щебня, песка, гравия и грунта в Ярославле и Костроме. Лучшие цены на щебень гранитный 5-20, речной песок, гравий для бетона. Доставка в день заказа.">
-    <meta name="keywords" content="купить щебень, доставка песка, продажа гравия, грунт с доставкой, цены на щебень, щебень гранитный 5-20, песок речной цена за куб, гравий для бетона, плодородный грунт оптом, щебень для фундамента">
+    <meta name="description" content="Судиславский карьер — продажа и доставка нерудных материалов: щебень, песок, гравий, ПГС, отсев, торф. Работаем в Костроме, Ярославле и Иваново. Доставка в день заказа, выгодные цены.">
+
+    <meta name="keywords" content="
+    судиславский карьер,
+    купить щебень,
+    щебень с доставкой,
+    песок карьерный,
+    песок мытый,
+    гравий купить,
+    пгс цена,
+    отсев дробления,
+    щебень 5-20,
+    щебень 20-40,
+    щебень 40-70,
+    асфальтная крошка,
+    бутовый камень,
+    торф купить,
+    торфосмесь,
+    нерудные материалы,
+    доставка щебня кострома,
+    доставка песка ярославль,
+    купить гравий иваново
+    ">
     <meta name="robots" content="index, follow">
-    <title>НерудТрейд - Продажа и доставка щебня, песка, гравия | Ярославль и Кострома</title>
+
+    <title>Судиславский карьер — щебень, песок, гравий с доставкой | Кострома, Ярославль, Иваново</title>
+
+    <meta property="og:title" content="Судиславский карьер — нерудные материалы с доставкой">
+    <meta property="og:description" content="Щебень, песок, гравий, ПГС, торф. Доставка в Костроме, Ярославле и Иваново. Быстро и по выгодным ценам.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/logo.png">
+
     <link rel="stylesheet" href="style/style.css">
     <link rel="icon" type="image/png" href="images/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <div class="header">
         <div class="menu">
-            <div class="logo">
-                <img src="images/logo.png" alt="Логотип">
+            <ul class="links">
+                <a class="header__a" href="#about-us"><li class="link">о нас</li></a>
+                <a class="header__a" href="#cooperation"><li class="link">сотрудничество</li></a>
+                <a class="header__a" href="#products"><li class="link">товары</li></a>
+            </ul>
+
+            <div class="header-right">
+                <div class="header-phones">
+                    <div class="phone-block">
+                        <span>Кострома</span>
+                        <a href="tel:+74942770070">8 (4942) 770-070</a>
+                    </div>
+                    <div class="phone-block">
+                        <span>Ярославль</span>
+                        <a href="tel:+74852700550">8 (4852) 700-550</a>
+                        <a href="tel:+79300767550">8-930-076-7550</a>
+                    </div>
+                    <div class="phone-block">
+                        <span>Иваново</span>
+                        <a href="tel:+79158301366">8-915-830-13-66</a>
+                    </div>
+                </div>
+
+                <div class="button-soc">
+                    <div class="header_button">
+                        <p class="header_button-text">ПОЗВОНИТЬ</p>
+                    </div>
+
+                    <a href="#"><img src="images/Max_logo_2025.png" alt="МАКС" width="35"></a>
+                </div>
             </div>
-            
+
             <div class="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-            
-            <ul class="links">
-                <a class="header__a" href="#our-adv"><li class="link">о нас</li></a>
-                <a class="header__a" href="#products"><li class="link">товары</li></a>
-                
-                <div class="button-soc">
-                    <li class="link">
-                        <div class="header_button">
-                            <p class="header_button-text">ПОЗВОНИТЬ</p>
-                        </div>
-                    </li>
-
-                    <li class="link">
-                        <a href="#"><img src="images/wp-logo.png" alt="" width="35px"></a>
-                    </li>
-                    <li class="link">
-                        <a href="#"><img src="images/tg-logo.png" alt="" width="45px"></a>
-                    </li>
-                </div>
-            </ul>
         </div>
-    </header>
-    
-    <!-- Мобильное меню -->
+    </div>
+
     <div class="mobile-menu">
         <button class="close-menu">✕</button>
         <ul class="mobile-links">
-            <a class="header__a mobile-link" href="#our-adv"><li class="link">О НАС</li></a>
+            <a class="header__a mobile-link" href="#about-us"><li class="link">О НАС</li></a>
+            <a class="header__a mobile-link" href="#cooperation"><li class="link">СОТРУДНИЧЕСТВО</li></a>
             <a class="header__a mobile-link" href="#products"><li class="link">ТОВАРЫ</li></a>
+
+            <li class="mobile-phones">
+                <div class="phone-block">
+                    <span>Кострома</span>
+                    <a href="tel:+74942770070">8 (4942) 770-070</a>
+                </div>
+                <div class="phone-block">
+                    <span>Ярославль</span>
+                    <a href="tel:+74852700550">8 (4852) 700-550</a>
+                    <a href="tel:+79300767550">8-930-076-7550</a>
+                </div>
+                <div class="phone-block">
+                    <span>Иваново</span>
+                    <a href="tel:+79158301366">8-915-830-13-66</a>
+                </div>
+            </li>
+
             <li>
                 <div class="header_button">
                     <p class="header_button-text">ПОЗВОНИТЬ</p>
                 </div>
             </li>
+
             <li class="mobile-soc">
-                <a href="#"><img src="images/wp-logo.png" alt="" width="35px"></a>
-                <a href="#"><img src="images/tg-logo.png" alt="" width="45px"></a>
+                <a href="#"><img src="images/Max_logo_2025.png" alt="" width="45"></a>
             </li>
         </ul>
     </div>
-    
-    <!-- Модальное окно -->
+
     <div id="call" class="modal-overlay">
         <div class="modal-window">
             <h2 class="title">Выберите город</h2>
@@ -78,18 +128,37 @@
                     <div class="modal-window__city">
                         <a class="header__a" href="tel:+74942770070"><p class="modal-window__text">КОСТРОМА</p></a>
                     </div>
+                    <div class="modal-window__city">
+                        <a class="header__a" href="tel:+79158301366"><p class="modal-window__text">ИВАНОВО</p></a>
+                    </div>
                 </div>
             </div>
             <button class="close-modal"><p class="modal-window__close-text">ЗАКРЫТЬ</p></button>
         </div>
     </div>
+
     <section class="main-section">
-        <h1 class="main-section__text text-h1">НерудТрейд</h1>
+        <h1 class="main-section__text text-h1">СУДИСЛАВСКИЙ КАРЬЕР</h1>
         <p class="main-section__text">ПРОДАЖА, ДОСТАВКА И САМОВЫВОЗ</p>
-        <p class="main-section__text">В ЯРОСЛАВЛЕ И КОСТРОМЕ</p>
+        <p class="main-section__text">В ЯРОСЛАВЛЕ, КОСТРОМЕ И ИВАНОВО</p>
         <div class="main-section__blok-text">
             <p class="main-section__text blok-text">Надежный поставщик нерудных материалов.</p>
             <p class="main-section__text blok-text">Доставка быстро, качественно и по самым выгодным ценам!</p>
+        </div>
+    </section>
+
+    <section class="self-pickup-simple">
+        <div class="self-pickup-simple__container">
+            <h2 class="self-pickup-simple__title">САМОВЫВОЗ</h2>
+            <div class="self-pickup-simple__address">
+                <p>г. Кострома, Галичское шоссе, 19</p>
+            </div>
+            <div class="self-pickup-simple__address">
+                <p>156860, Костромская область, Судиславский район, деревня Жолобово</p>
+            </div>
+            <div class="self-pickup-simple__address">
+                <p>г. Ярославль, ул. Гагарина, 50</p>
+            </div>
         </div>
     </section>
 
@@ -109,7 +178,6 @@
                     <img src="images/our-adv/card3.png" alt="" class="our-advantages__icon">
                     <p class="our-advantages__card-text">ДОСТАВКА<br>В ДЕНЬ<br>ОБРАЩЕНИЯ</p>
                 </div>
-                
                 <div class="our-advantages__card">
                     <img src="images/our-adv/card4.png" alt="" class="our-advantages__icon">
                     <p class="our-advantages__card-text">ДОСТАВКА<br>И<br>САМОВЫВОЗ</p>
@@ -125,7 +193,7 @@
             </div>
             <a class="our-advantages__button" href="#">
                 <div>ПОЗВОНИТЬ</div>
-                <div><img src="images/arrow.png" alt="" width="50px"></div>
+                <div><img src="images/arrow.png" alt="" width="50"></div>
             </a>
         </div>
     </section>
@@ -146,7 +214,7 @@
                         <p class="back-text">Позвоните нам или оставьте заявку на сайте</p>
                     </div>
                 </div>
-    
+
                 <div class="stage-card">
                     <div class="stage-card__front">
                         <div class="stage-card__title">
@@ -156,10 +224,10 @@
                         <div class="stage-card__img"></div>
                     </div>
                     <div class="stage-card__back">
-                        <p class="back-text">Получите квалифицированную помощь по любому вопросу </p>
+                        <p class="back-text">Получите квалифицированную помощь по любому вопросу</p>
                     </div>
                 </div>
-    
+
                 <div class="stage-card">
                     <div class="stage-card__front">
                         <div class="stage-card__title">
@@ -169,10 +237,10 @@
                         <div class="stage-card__img"></div>
                     </div>
                     <div class="stage-card__back">
-                        <p class="back-text">Подготовим для вас расчет стоимости , согласуем сроки доставки </p>
+                        <p class="back-text">Подготовим для вас расчет стоимости, согласуем сроки доставки</p>
                     </div>
                 </div>
-    
+
                 <div class="stage-card">
                     <div class="stage-card__front">
                         <div class="stage-card__title">
@@ -189,14 +257,58 @@
         </div>
     </section>
 
+    <section class="cooperation" id="cooperation">
+        <div class="cooperation__container">
+            <h2 class="cooperation__title">Сотрудничество</h2>
+            <p class="cooperation__subtitle">
+                Наша компания на рынке уже более 15 лет. Мы активно развиваемся и растем,<br>
+                поэтому сейчас готовы предложить различные виды сотрудничества!
+            </p>
+
+            <div class="cooperation__cards">
+                <div class="cooperation__card">
+                    <h3 class="cooperation__card-title">Для перевозчиков и владельцев грузовых машин</h3>
+                    <ul class="cooperation__list">
+                        <li>Ремонт вашего транспорта в нашем автосервисе</li>
+                        <li>Помоем машину на нашей мойке</li>
+                        <li>Заправим ваш автомобиль на собственной заправке</li>
+                        <li>Ремонт топливной аппаратуры</li>
+                        <li>Снабжение авто запчастями и шинами по закупочным ценам</li>
+                    </ul>
+                </div>
+
+                <div class="cooperation__card">
+                    <h3 class="cooperation__card-title">Для активных предпринимателей</h3>
+                    <ul class="cooperation__list">
+                        <li>Запустим площадку нерудных материалов под ключ</li>
+                        <li>Поможем с привлечением клиентов</li>
+                        <li>Обучим ваш отдел продаж</li>
+                        <li>Поможем с подбором кадров</li>
+                        <li>Обеспечим макетами для рекламных материалов</li>
+                    </ul>
+                </div>
+
+                <div class="cooperation__card">
+                    <h3 class="cooperation__card-title">Для фрилансеров и удалённых менеджеров по продажам</h3>
+                    <ul class="cooperation__list">
+                        <li>Хороший процент с продажи</li>
+                        <li>Компенсация командировочных расходов</li>
+                        <li>Компенсация телефонной связи</li>
+                        <li>Предоставление всех необходимых материалов для обучения</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
     <section class="product-section">
         <h2 id="products" class="title product-section__title">ТОВАРЫ</h2>
         <div class="product-section__container">
             <div class="product-section__flex">
                 <div class="product-section__card" v-for="product in products" :key="product.id">
-                    <img class="product-section__img" :src="'images/product/product-' + product.id + '.png'" :alt="product.title + ' - купить с доставкой в Ярославле и Костроме'">
+                    <img class="product-section__img" :src="'images/product/product-' + product.id + '.png'" :alt="product.title + ' - купить с доставкой в Костромской, Ярославской, Ивановской области'">
                     <p class="card-title product-section__card-text">{{ product.title }}</p>
                     <p class="product-section__card-text">{{ product.description }}</p>
                     <p class="delivery product-section__card-text">Доставка: {{ product.delivery }}</p>
@@ -207,12 +319,53 @@
         <a class="product-section__button" href="#call">ЗАКАЗАТЬ</a>
     </section>
 
+    <section class="about-us" id="about-us">
+        <div class="about-us__container">
+            <h2 class="title about-us__title">О НАС</h2>
+
+            <div class="about-us__card">
+                <div class="about-us__content">
+                    <p class="about-us__text">ООО «ЭкоТопливо» разрабатывает месторождение с 2012 года, для этого имеется вся правоустанавливающая и разрешительная документация.</p>
+                    <p class="about-us__text">Договор аренды земли для разработки месторождения с Администрацией Судиславского сельского поселения.</p>
+                    <p class="about-us__text">Лабораторные испытания проводились ОАО «Костромапроект».</p>
+                    <p class="about-us__text">Добыча ведется на основании лицензии: КОС 80072 ТЭ.</p>
+                </div>
+            </div>
+
+            <div class="about-us__letters-block">
+                <h3 class="about-us__subtitle">Благодарственные письма</h3>
+
+                <div class="about-us__letters">
+                    <a class="about-us__letter" href="#" data-gallery-image="images/letters/letter-1.jpg">
+                        <div class="about-us__letter-image">
+                            <img src="images/letters/letter-1.jpg" alt="Благодарственное письмо 1">
+                        </div>
+                        <div class="about-us__letter-caption">Отдел образования администрации Судиславского муниципального района</div>
+                    </a>
+
+                    <a class="about-us__letter" href="#" data-gallery-image="images/letters/letter-2.jpg">
+                        <div class="about-us__letter-image">
+                            <img src="images/letters/letter-2.jpg" alt="Благодарственное письмо 2">
+                        </div>
+                        <div class="about-us__letter-caption">Администрация Судиславского сельского поселения</div>
+                    </a>
+
+                    <a class="about-us__letter" href="#" data-gallery-image="images/letters/letter-3.jpg">
+                        <div class="about-us__letter-image">
+                            <img src="images/letters/letter-3.jpg" alt="Благодарственное письмо 3">
+                        </div>
+                        <div class="about-us__letter-caption">Департамент природных ресурсов Костромской области</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="reviews-carousel">
         <h2 class="title reviews-carousel">ОТЗЫВЫ</h2>
         <div class="reviews-container">
             <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <!-- Отзыв 1 -->
                     <div class="carousel-item active">
                         <div class="review">
                             <div class="review_header">
@@ -230,8 +383,7 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- Отзыв 2 -->
+
                     <div class="carousel-item">
                         <div class="review">
                             <div class="review_header">
@@ -251,8 +403,7 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- Отзыв 3 -->
+
                     <div class="carousel-item">
                         <div class="review">
                             <div class="review_header">
@@ -273,8 +424,7 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- Отзыв 4 -->
+
                     <div class="carousel-item">
                         <div class="review">
                             <div class="review_header">
@@ -288,13 +438,12 @@
                                         <img src="images/icons8-звезда-96 1.png" alt="звезда" class="review_star">
                                     </div>
                                 </div>
-                                <p class="review_text">Вечером заказали, утром песок уже привезли! Всё супер! Водитель хороший. У нас сложный заезд на участок и даже не пришлось выслушивать ничего по этому поводу от водителя. Всё чётко заехал, разгрузил, уехал. <br> Спасибо большое за работу </p>
+                                <p class="review_text">Вечером заказали, утром песок уже привезли! Всё супер! Водитель хороший. У нас сложный заезд на участок и даже не пришлось выслушивать ничего по этому поводу от водителя. Всё чётко заехал, разгрузил, уехал. <br> Спасибо большое за работу</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Кнопки управления -->
+
                 <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
@@ -306,6 +455,7 @@
             </div>
         </div>
     </section>
+
     <footer>
         <div class="footer-section__container">
             <div class="footer-section__left">
@@ -323,79 +473,102 @@
                     <img class="form-section__img-left" src="images/phone.png" alt="">
                     <p class="footer-section__text">8-930-076-7550</p>
                 </div>
+                <p class="footer-section__text">Иваново</p>
+                <div class="footer-section__block-left">
+                    <img class="form-section__img-left" src="images/phone.png" alt="">
+                    <p class="footer-section__text">8-915-830-13-66</p>
+                </div>
             </div>
+
             <div class="footer-section__img">
-                <img src="images/logo.png" alt="Логотип">
+                <img class="footer-logo" src="images/logo.png" alt="Логотип">
             </div>
+
             <div class="footer-section__right">
                 <div>
                     <p class="footer-section__text messenger-text">Контакты</p>
                     <div class="footer-section__block-right">
-                        <a href="https://vk.com/club231189647"><img class="footer-section__img-block-right1" src="images/vk.png" alt="ватс ап"></a>
-                        <a href="#"><img class="footer-section__img-block-right2" src="images/wp-logo.png" alt="телеграмм"></a>
+                        <a href="https://vk.com/club231189647"><img class="footer-section__img-block-right1" src="images/vk.png" alt="ВК"></a>
+                        <a href="#"><img class="footer-section__img-block-right2" src="images/Max_logo_2025.png" alt="МАКС"></a>
                     </div>
                 </div>
                 <div>
                     <p class="footer-section__text">Мы на картах</p>
                     <div class="footer-section__block-right">
                         <a href="#"><img class="footer-section__img-block-right3" src="images/map.png" alt="карты"></a>
+                        <p class="footer-section__text">156860, Костромская область, Судиславский район, деревня Жолобово</p>
                     </div>
                 </div>
             </div>
+
+            <div class="footer-section__legal">
+                <p class="footer-section__text legal-text">ООО «ЭкоТопливо»</p>
+                <p class="footer-section__text legal-text">ИНН 4401127731 / КПП 440101001</p>
+                <p class="footer-section__text legal-text">ОГРН 1114401004827</p>
+                <p class="footer-section__text legal-text">156019, г. Кострома, ул. Мелиоративная, д. 7</p>
+                <p class="footer-section__text legal-text">e-mail: eko_toplivo@mail.ru</p>
+            </div>
         </div>
     </footer>
-    <!-- Модальное окно Telegram -->
-<div id="telegramModal" class="modal-overlay">
-    <div class="modal-window">
-        <h2 class="title">Telegram</h2>
-        <div class="modal-window__container">
-            <div class="modal-window__block">
-                <div class="modal-window__city">
-                    <a class="header__a" href="https://t.me/+79536418423"><p class="modal-window__text">КОСТРОМА</p></a>
-                </div>
-                <div class="modal-window__city">
-                    <a class="header__a" href="https://t.me/+79168834464"><p class="modal-window__text">ЯРОСЛАВЛЬ</p></a>
-                </div>
-            </div>
-        </div>
-        <button class="close-modal" onclick="closeModal('telegramModal')"><p class="modal-window__close-text">ЗАКРЫТЬ</p></button>
-    </div>
-</div>
 
-<!-- Модальное окно WhatsApp -->
-<div id="whatsappModal" class="modal-overlay">
-    <div class="modal-window">
-        <h2 class="title">WhatsApp</h2>
-        <div class="modal-window__container">
-            <div class="modal-window__block">
-                <div class="modal-window__city">
-                    <a class="header__a" href="https://wa.me/79536418423"><p class="modal-window__text">КОСТРОМА</p></a>
-                </div>
-                <div class="modal-window__city">
-                    <a class="header__a" href="https://wa.me/79168834464"><p class="modal-window__text">ЯРОСЛАВЛЬ</p></a>
-                </div>
-            </div>
-        </div>
-        <button class="close-modal" onclick="closeModal('whatsappModal')"><p class="modal-window__close-text">ЗАКРЫТЬ</p></button>
-    </div>
-</div>
-<!-- Модальное окно Карты -->
-<div id="mapModal" class="modal-overlay">
-    <div class="modal-window">
-        <h2 class="title">МЫ НА КАРТАХ</h2>
-        <div class="modal-window__container">
-            <div class="modal-window__block">
-                <div class="modal-window__city">
-                    <a class="header__a" href="https://2gis.ru/kostroma/firm/70000001102518003/41.022734%2C57.785263?m=41.022735%2C57.785304%2F16%2Fp%2F43.2%2Fr%2F-0.95"><p class="modal-window__text">КОСТРОМА</p></a>
-                </div>
-                <div class="modal-window__city">
-                    <a class="header__a" href="https://2gis.ru/yaroslavl/geo/3941285329111857?m=39.82528%2C57.57673%2F18.3%2Fp%2F43.2%2Fr%2F-0.95"><p class="modal-window__text">ЯРОСЛАВЛЬ</p></a>
+    <div id="telegramModal" class="modal-overlay">
+        <div class="modal-window">
+            <h2 class="title">Telegram</h2>
+            <div class="modal-window__container">
+                <div class="modal-window__block">
+                    <div class="modal-window__city">
+                        <a class="header__a" href="https://t.me/+79536418423"><p class="modal-window__text">КОСТРОМА</p></a>
+                    </div>
+                    <div class="modal-window__city">
+                        <a class="header__a" href="https://t.me/+79168834464"><p class="modal-window__text">ЯРОСЛАВЛЬ</p></a>
+                    </div>
                 </div>
             </div>
+            <button class="close-modal" onclick="closeModal('telegramModal')"><p class="modal-window__close-text">ЗАКРЫТЬ</p></button>
         </div>
-        <button class="close-modal" onclick="closeModal('mapModal')"><p class="modal-window__close-text">ЗАКРЫТЬ</p></button>
     </div>
-</div>
+
+    <div id="whatsappModal" class="modal-overlay">
+        <div class="modal-window">
+            <h2 class="title">WhatsApp</h2>
+            <div class="modal-window__container">
+                <div class="modal-window__block">
+                    <div class="modal-window__city">
+                        <a class="header__a" href="https://wa.me/79536418423"><p class="modal-window__text">КОСТРОМА</p></a>
+                    </div>
+                    <div class="modal-window__city">
+                        <a class="header__a" href="https://wa.me/79168834464"><p class="modal-window__text">ЯРОСЛАВЛЬ</p></a>
+                    </div>
+                </div>
+            </div>
+            <button class="close-modal" onclick="closeModal('whatsappModal')"><p class="modal-window__close-text">ЗАКРЫТЬ</p></button>
+        </div>
+    </div>
+
+    <div id="mapModal" class="modal-overlay">
+        <div class="modal-window">
+            <h2 class="title">МЫ НА КАРТАХ</h2>
+            <div class="modal-window__container">
+                <div class="modal-window__block">
+                    <div class="modal-window__city">
+                        <a class="header__a" href="https://2gis.ru/kostroma/firm/70000001102518003/41.022734%2C57.785263?m=41.022735%2C57.785304%2F16%2Fp%2F43.2%2Fr%2F-0.95"><p class="modal-window__text">КОСТРОМА</p></a>
+                    </div>
+                    <div class="modal-window__city">
+                        <a class="header__a" href="https://2gis.ru/yaroslavl/geo/3941285329111857?m=39.82528%2C57.57673%2F18.3%2Fp%2F43.2%2Fr%2F-0.95"><p class="modal-window__text">ЯРОСЛАВЛЬ</p></a>
+                    </div>
+                </div>
+            </div>
+            <button class="close-modal" onclick="closeModal('mapModal')"><p class="modal-window__close-text">ЗАКРЫТЬ</p></button>
+        </div>
+    </div>
+
+    <div id="galleryModal" class="gallery-modal" aria-hidden="true">
+        <div class="gallery-modal__content">
+            <button class="gallery-modal__close" type="button" aria-label="Закрыть">×</button>
+            <img class="gallery-modal__image" src="" alt="Увеличенное благодарственное письмо">
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         new Vue({
@@ -403,185 +576,247 @@
             data: {
                 products: [
                     {
-                        id: 2,
-                        title: 'ПГС (песчано-гравийная смесь)',
-                        description: 'Природная смесь песка и гравия, широко используемая в строительстве для устройства оснований и покрытий дорог, дренажных систем',
-                        delivery: 'Ярославль, Кострома'
-                    },
-                    {
-                        id: 3,
-                        title: 'Отсев дробления мытый',
-                        description: 'Мелкофракционный материал, получаемый при дроблении горных пород, с последующей промывкой для удаления пылевидных частиц',
-                        delivery: 'Ярославль, Кострома'
-                    },
-                    {
-                        id: 4,
-                        title: 'Песок карьерный мытый',
-                        description: 'Натуральный строительный песок, очищенный от примесей путем промывки, с оптимальным гранулометрическим составом',
-                        delivery: 'Ярославль, Кострома'
-                    },
-                    {
                         id: 5,
-                        title: 'Щебень гравийный 5/20',
+                        title: 'Щебень 5/20',
                         description: 'Среднефракционный щебень с размером зерен от 5 до 20 мм, получаемый путем дробления природного гравия',
-                        delivery: 'Ярославль, Кострома'
+                        delivery: 'Костромская, Ярославская, Ивановская области'
+                    },
+                    {
+                        id: 14,
+                        title: 'Щебень мытый 5/20',
+                        description: 'Чистый, без примесей, окатанный камень, применяемый как высококачественный заполнитель в бетонных смесях и строительных растворах',
+                        delivery: 'Костромская, Ярославская, Ивановская области'
                     },
                     {
                         id: 6,
-                        title: 'Щебень гравийный 20/40',
+                        title: 'Щебень 20/40',
                         description: 'Крупнофракционный щебень для строительных работ, отличается высокой прочностью и морозостойкостью',
-                        delivery: 'Ярославль, Кострома'
+                        delivery: 'Костромская, Ярославская, Ивановская области'
                     },
                     {
                         id: 7,
-                        title: 'Щебень гравийный 40/70',
+                        title: 'Щебень 40/70',
                         description: 'Крупный щебень для ответственных строительных работ, устройства дренажных систем и дорожных покрытий',
-                        delivery: 'Ярославль, Кострома'
+                        delivery: 'Костромская, Ярославская, Ивановская области'
+                    },
+                    {
+                        id: 13,
+                        title: 'Гравий',
+                        description: 'Высокопрочный композит, применяемый в строительстве, промышленном производстве или научных исследованиях',
+                        delivery: 'Костромская, Ярославская, Ивановская области'
                     },
                     {
                         id: 8,
                         title: 'Гравий 5/20 мытый',
                         description: 'Окатанные зерна горных пород размером 5-20 мм, очищенные от примесей, идеально подходит для декоративных целей',
-                        delivery: 'Ярославль, Кострома'
+                        delivery: 'Костромская, Ярославская, Ивановская области'
+                    },
+                    {
+                        id: 1,
+                        title: 'Песок строительный',
+                        description: 'Природный песок для строительных и отделочных работ, с оптимальным гранулометрическим составом',
+                        delivery: 'Костромская, Ярославская, Ивановская области'
+                    },
+                    {
+                        id: 4,
+                        title: 'Песок строительный мытый',
+                        description: 'Натуральный строительный песок, очищенный от примесей путем промывки, с оптимальным гранулометрическим составом',
+                        delivery: 'Костромская, Ярославская, Ивановская области'
+                    },
+                    {
+                        id: 2,
+                        title: 'ПГС (песчано-гравийная смесь)',
+                        description: 'Природная смесь песка и гравия, широко используемая в строительстве для устройства оснований и покрытий дорог, дренажных систем',
+                        delivery: 'Костромская, Ярославская, Ивановская области'
+                    },
+                    {
+                        id: 3,
+                        title: 'Отсев дробления мытый',
+                        description: 'Мелкофракционный материал, получаемый при дроблении горных пород, с последующей промывкой для удаления пылевидных частиц',
+                        delivery: 'Костромская, Ярославская, Ивановская области'
                     },
                     {
                         id: 9,
                         title: 'Асфальтная крошка',
                         description: 'Вторичный материал из переработанного асфальтового покрытия, применяемый для отсыпки дорог и временных покрытий',
-                        delivery: 'Ярославль, Кострома'
+                        delivery: 'Костромская, Ярославская, Ивановская области'
                     },
                     {
                         id: 10,
                         title: 'Бутовый камень фракция 100-400',
                         description: 'Крупные куски природного камня неправильной формы, используемые для строительства фундаментов и декоративных сооружений',
-                        delivery: 'Ярославль, Кострома'
+                        delivery: 'Костромская, Ярославская, Ивановская области'
                     },
                     {
                         id: 11,
                         title: 'Торф',
                         description: 'Природный органический материал, образующийся в результате разложения растительности в условиях избыточного увлажнения',
-                        delivery: 'Кострома'
+                        delivery: 'Костромская, Ярославская, Ивановская области'
                     },
                     {
                         id: 12,
                         title: 'Торфосмесь',
                         description: 'Готовый субстрат на основе торфа с добавлением минеральных удобрений и структурирующих компонентов',
-                        delivery: 'Кострома'
+                        delivery: 'Костромская, Ярославская, Ивановская области'
+                    },
+                    {
+                        id: 15,
+                        title: 'Валун',
+                        description: 'Крупный окатанный обломок горной породы, имеющий в поперечнике 0,2 метра и более',
+                        delivery: 'Костромская, Ярославская, Ивановская области'
                     }
                 ]
             }
         });
 
-    // Гамбургер меню
-const hamburger = document.querySelector('.hamburger');
-const mobileMenu = document.querySelector('.mobile-menu');
-const closeMenuBtn = document.querySelector('.close-menu');
+        const hamburger = document.querySelector('.hamburger');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const closeMenuBtn = document.querySelector('.close-menu');
 
-hamburger.addEventListener('click', function() {
-    mobileMenu.classList.add('active');
-    hamburger.classList.add('hidden');
-});
-
-closeMenuBtn.addEventListener('click', function() {
-    mobileMenu.classList.remove('active');
-    hamburger.classList.remove('hidden');
-});
-
-// Модальные окна
-const mobileCallButton = document.querySelector('.mobile-menu .header_button');
-const headerCallButton = document.querySelector('.header_button');
-const orderBtn = document.querySelector('.product-section__button');
-const advantagesCallButton = document.querySelector('.our-advantages__button');
-const closeBtn = document.querySelector('.close-modal');
-
-// Универсальная функция открытия модальных окон
-function openModal(modalId = 'call') { // По умолчанию открываем окно звонка
-    const modal = document.getElementById(modalId);
-    if (modal) {
-        modal.style.display = 'flex';
-        mobileMenu.classList.remove('active');
-        hamburger.classList.remove('hidden');
-    }
-}
-
-// Функция закрытия
-function closeModal(modalId) {
-    const modal = document.getElementById(modalId);
-    if (modal) {
-        modal.style.display = 'none';
-    }
-}
-
-// Обработчики для кнопок "Позвонить"
-if (mobileCallButton) {
-    mobileCallButton.addEventListener('click', function() {
-        openModal(); // Используем значение по умолчанию ('call')
-    });
-}
-
-if (headerCallButton) {
-    headerCallButton.addEventListener('click', function() {
-        openModal(); // Используем значение по умолчанию ('call')
-    });
-}
-
-if (orderBtn) {
-    orderBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        openModal(); // Используем значение по умолчанию ('call')
-    });
-}
-
-if (advantagesCallButton) {
-    advantagesCallButton.addEventListener('click', function(e) {
-        e.preventDefault();
-        openModal(); // Используем значение по умолчанию ('call')
-    });
-}
-
-// Обработчик закрытия
-closeBtn.addEventListener('click', function() {
-    closeModal('call');
-});
-
-// Закрытие при клике вне окна
-document.querySelectorAll('.modal-overlay').forEach(modal => {
-    modal.addEventListener('click', function(e) {
-        if (e.target === this) {
-            closeModal(this.id);
+        if (hamburger && mobileMenu) {
+            hamburger.addEventListener('click', function() {
+                mobileMenu.classList.add('active');
+                hamburger.classList.add('hidden');
+            });
         }
-    });
-});
 
-// Закрытие меню при клике на ссылку
-const mobileLinks = document.querySelectorAll('.mobile-link');
-mobileLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        mobileMenu.classList.remove('active');
-        hamburger.classList.remove('hidden');
-    });
-});
-
-// Обработчики для соцсетей и карт
-document.querySelectorAll('.button-soc a, .mobile-soc a, .footer-section__block-right a').forEach(link => {
-    link.addEventListener('click', function(e) {
-        const img = this.querySelector('img');
-        if (!img) return;
-        
-        if (img.src.includes('tg-logo')) {
-            e.preventDefault();
-            openModal('telegramModal');
-        } else if (img.src.includes('wp-logo')) {
-            e.preventDefault();
-            openModal('whatsappModal');
-        } else if (img.src.includes('map.png')) {
-            e.preventDefault();
-            openModal('mapModal');
+        if (closeMenuBtn && mobileMenu && hamburger) {
+            closeMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.remove('active');
+                hamburger.classList.remove('hidden');
+            });
         }
-    });
-});
 
+        const mobileCallButton = document.querySelector('.mobile-menu .header_button');
+        const headerCallButton = document.querySelector('.header .header_button');
+        const orderBtn = document.querySelector('.product-section__button');
+        const advantagesCallButton = document.querySelector('.our-advantages__button');
+        const closeBtn = document.querySelector('#call .close-modal');
 
+        function openModal(modalId = 'call') {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.style.display = 'flex';
+                if (mobileMenu) mobileMenu.classList.remove('active');
+                if (hamburger) hamburger.classList.remove('hidden');
+            }
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        if (mobileCallButton) {
+            mobileCallButton.addEventListener('click', function() {
+                openModal();
+            });
+        }
+
+        if (headerCallButton) {
+            headerCallButton.addEventListener('click', function() {
+                openModal();
+            });
+        }
+
+        if (orderBtn) {
+            orderBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                openModal();
+            });
+        }
+
+        if (advantagesCallButton) {
+            advantagesCallButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                openModal();
+            });
+        }
+
+        if (closeBtn) {
+            closeBtn.addEventListener('click', function() {
+                closeModal('call');
+            });
+        }
+
+        document.querySelectorAll('.modal-overlay').forEach(modal => {
+            modal.addEventListener('click', function(e) {
+                if (e.target === this) {
+                    closeModal(this.id);
+                }
+            });
+        });
+
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (mobileMenu) mobileMenu.classList.remove('active');
+                if (hamburger) hamburger.classList.remove('hidden');
+            });
+        });
+
+        const galleryModal = document.getElementById('galleryModal');
+        const galleryModalImage = document.querySelector('.gallery-modal__image');
+        const galleryModalClose = document.querySelector('.gallery-modal__close');
+
+        document.querySelectorAll('[data-gallery-image]').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                const imageSrc = this.getAttribute('data-gallery-image');
+                if (!galleryModal || !galleryModalImage || !imageSrc) return;
+
+                galleryModalImage.src = imageSrc;
+                galleryModal.classList.add('active');
+                galleryModal.setAttribute('aria-hidden', 'false');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        function closeGalleryModal() {
+            if (!galleryModal || !galleryModalImage) return;
+            galleryModal.classList.remove('active');
+            galleryModal.setAttribute('aria-hidden', 'true');
+            galleryModalImage.src = '';
+            document.body.style.overflow = '';
+        }
+
+        if (galleryModalClose) {
+            galleryModalClose.addEventListener('click', closeGalleryModal);
+        }
+
+        if (galleryModal) {
+            galleryModal.addEventListener('click', function(e) {
+                if (e.target === galleryModal) {
+                    closeGalleryModal();
+                }
+            });
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && galleryModal && galleryModal.classList.contains('active')) {
+                closeGalleryModal();
+            }
+        });
+
+        document.querySelectorAll('.button-soc a, .mobile-soc a, .footer-section__block-right a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                const img = this.querySelector('img');
+                if (!img) return;
+
+                if (img.src.includes('tg-logo')) {
+                    e.preventDefault();
+                    openModal('telegramModal');
+                } else if (img.src.includes('wp-logo')) {
+                    e.preventDefault();
+                    openModal('whatsappModal');
+                } else if (img.src.includes('map.png')) {
+                    e.preventDefault();
+                    openModal('mapModal');
+                }
+            });
+        });
     </script>
 </body>
 </html>
