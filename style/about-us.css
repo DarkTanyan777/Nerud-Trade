@@ -1,0 +1,244 @@
+.about-us {
+    background: #ffffff;
+    padding: 80px 20px;
+}
+
+.about-us__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-us__title {
+    margin-bottom: 35px !important;
+}
+
+.about-us__card {
+    background: #3E3E3E;
+    border-radius: 18px;
+    padding: 35px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    border-left: 6px solid #FFD800;
+    margin-bottom: 50px;
+}
+
+.about-us__content {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.about-us__text {
+    margin: 0;
+    font-family: "Golos Text", sans-serif;
+    font-size: 19px;
+    line-height: 1.7;
+    color: #ffffff;
+}
+
+.about-us__letters-block {
+    margin-top: 10px;
+}
+
+.about-us__subtitle {
+    font-family: "Golos Text", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #3E3E3E;
+    text-align: center;
+    margin: 0 0 30px 0;
+    text-transform: uppercase;
+}
+
+.about-us__letters {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.about-us__letter {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    background: #3E3E3E;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.about-us__letter:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.14);
+}
+
+.about-us__letter-image {
+    background: #3E3E3E;
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+}
+
+.about-us__letter-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.about-us__letter-caption {
+    padding: 18px 16px;
+    font-family: "Golos Text", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ffffff;
+    text-align: center;
+    min-height: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* МОДАЛКА ГАЛЕРЕИ */
+.gallery-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.88);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 3000;
+}
+
+.gallery-modal.active {
+    display: flex;
+}
+
+.gallery-modal__content {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-modal__image {
+    display: block;
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+    background: #ffffff;
+}
+
+.gallery-modal__close {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background: #FFD800;
+    color: #3E3E3E;
+    font-size: 28px;
+    line-height: 1;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.gallery-modal__close:hover {
+    transform: scale(1.08);
+    background: #FFC000;
+}
+
+/* Планшеты */
+@media (max-width: 992px) {
+    .about-us {
+        padding: 60px 20px;
+    }
+
+    .about-us__card {
+        padding: 28px;
+    }
+
+    .about-us__text {
+        font-size: 17px;
+    }
+
+    .about-us__subtitle {
+        font-size: 26px;
+    }
+
+    .about-us__letters {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Мобилка */
+@media (max-width: 768px) {
+    .about-us {
+        padding: 45px 15px;
+    }
+
+    .about-us__card {
+        padding: 22px 18px;
+        border-left-width: 4px;
+        margin-bottom: 35px;
+    }
+
+    .about-us__content {
+        gap: 14px;
+    }
+
+    .about-us__text {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .about-us__subtitle {
+        font-size: 22px;
+        margin-bottom: 22px;
+    }
+
+    .about-us__letters {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .about-us__letter-caption {
+        min-height: auto;
+        font-size: 15px;
+        padding: 14px 12px;
+    }
+
+    .gallery-modal {
+        padding: 12px;
+    }
+
+    .gallery-modal__content {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .gallery-modal__image {
+        max-width: 100%;
+        max-height: 85vh;
+    }
+
+    .gallery-modal__close {
+        top: -10px;
+        right: -2px;
+        width: 38px;
+        height: 38px;
+        font-size: 24px;
+    }
+}

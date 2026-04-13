@@ -1,1 +1,6 @@
- 
+User-agent: *
+Allow: /
+
+Host: karier44.ru
+
+Sitemap: https://karier44.ru/sitemap.xml

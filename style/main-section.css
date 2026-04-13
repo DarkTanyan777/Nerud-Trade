@@ -1,34 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap');
 
-.main-section{
-    background-image: url('../images/image.png');
+/* ================= MAIN SECTION ================= */
+
+.main-section {
+    position: relative;
+
+    background-image: url('../images/logo-2-1.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    height: 95vh;
+    background-size: contain; /* ключевой фикс */
+
+    background-color: #000; /* фон под картинку */
+
+    min-height: 95vh;
+    padding: 40px 20px;
+
     display: flex;
     flex-direction: column;
-
+    justify-content: center;
 }
+
+/* затемнение (чтобы выглядело как cover) */
+.main-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+/* поднимаем контент */
+.main-section > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* ================= ТЕКСТ ================= */
+
+.main-section__text {
+    color: white;
+    font-family: "Golos Text", sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* главный заголовок */
+.text-h1 {
+    font-size: 85px;
+    color: #d36204;
+    margin-bottom: 10px;
+}
+
+/* подзаголовки */
+.main-section__text:not(.text-h1) {
+    font-size: 40px;
+    line-height: 50px;
+}
+
+/* нижний блок */
 .main-section__blok-text {
     position: relative;
     margin-top: auto;
-    height: 300px;
+    padding: 20px;
+
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
 }
 
+/* затемнение под текстом */
 .main-section__blok-text::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #3e3e3e;
-    filter: blur(30px);
+    inset: 0;
+    background: rgba(62, 62, 62, 0.6);
+    filter: blur(40px);
     z-index: 0;
 }
 
@@ -36,61 +82,71 @@
     position: relative;
     z-index: 1;
 }
-.main-section__text{
-    
-    color: white;
-    font-family: "Golos Text", sans-serif;
-    font-weight: bold;
-    font-size: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.blok-text{
-    margin: 0 0 15px 0;
-    text-align: center;
-}
-.text-h1{
-    font-family: "Golos Text", sans-serif;
-    font-weight: bold;
-    font-size: 70px;
+
+.blok-text {
+    font-size: 22px;
+    margin-bottom: 10px;
 }
 
-@media (max-width: 768px){
-    .main-section__text{
-        font-size: 30px;
-        line-height: 50px;
-        text-align: center;
-    }
-    .text-h1{
-        font-size: 40px;
-        margin-top: 40px;
-        text-align: center;
+/* ================= АДАПТИВ ================= */
+
+/* 🔹 1164px */
+@media (max-width: 1164px) {
+
+    .text-h1 {
+        font-size: 70px;
     }
 
-    .blok-text{
-        font-size: 25px;
-        line-height: 30px;
-        text-align: center;
+    .main-section__text:not(.text-h1) {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .blok-text {
+        font-size: 20px;
     }
 }
 
-@media (max-width: 567px){
-    .main-section__text{
-        font-size: 25px;
-        line-height: 40px;
-        text-align: center;
-    }
-    .text-h1{
-        font-size: 30px;
-        margin-top: 30px;
-        text-align: center;
+/* 🔹 768px */
+@media (max-width: 768px) {
+
+    .main-section {
+        padding: 20px 15px;
     }
 
-    .blok-text{
+    .text-h1 {
+        font-size: 52px;
+    }
+
+    .main-section__text:not(.text-h1) {
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+    .blok-text {
         font-size: 18px;
-        line-height: 25px;
-        text-align: center;
+        line-height: 26px;
+    }
+
+    .main-section__blok-text {
+        margin-top: 30px;
     }
 }
 
+/* 🔹 500px */
+@media (max-width: 500px) {
+
+    .text-h1 {
+        font-size: 36px;
+    }
+
+    .main-section__text:not(.text-h1) {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .blok-text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}

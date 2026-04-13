@@ -6,12 +6,17 @@
 @import url("form.css");
 @import url("review.css");
 @import url("footer.css");
+@import url("cooperation.css");
+@import url("self-pickup.css");
+@import url("about-us.css");
 @import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap');
+
 
 
 body{
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 
 .title{

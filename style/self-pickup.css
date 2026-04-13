@@ -1,0 +1,94 @@
+/* ================= SIMPLE SELF PICKUP ================= */
+.self-pickup-simple {
+    background-color: #ffffff;
+    padding: 50px 20px;
+}
+
+.self-pickup-simple__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.self-pickup-simple__title {
+    width: 100%;
+    font-family: "Golos Text", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #3E3E3E;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.self-pickup-simple__address {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 120px;
+    width: min(360px, 100%);
+    background-color: #3E3E3E;
+    color: #ffffff;
+    padding: 20px 24px;
+    border-radius: 12px;
+    border-bottom: 4px solid #E0A901;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.self-pickup-simple__address:hover {
+    transform: translateY(-5px);
+    background-color: #4a4a4a;
+    box-shadow: 0 8px 20px rgba(255, 216, 0, 0.3);
+}
+
+.self-pickup-simple__address p {
+    font-family: "Golos Text", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .self-pickup-simple {
+        padding: 35px 15px;
+    }
+
+    .self-pickup-simple__container {
+        gap: 15px;
+    }
+    
+    .self-pickup-simple__title {
+        font-size: 36px;
+    }
+
+    .self-pickup-simple__address {
+        width: 100%;
+        min-height: auto;
+    }
+    
+    .self-pickup-simple__address p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 500px) {
+    .self-pickup-simple__title {
+        font-size: 28px;
+    }
+    
+    .self-pickup-simple__address {
+        padding: 14px 18px;
+        border-radius: 10px;
+    }
+    
+    .self-pickup-simple__address p {
+        font-size: 16px;
+    }
+}

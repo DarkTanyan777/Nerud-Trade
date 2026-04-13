@@ -1,5 +1,5 @@
 .footer-section__container {
-    background-color: #181818;
+    background-color: #000000;
     height: auto;
     width: 100%;
     padding: 20px 40px;
@@ -8,11 +8,13 @@
     flex-wrap: wrap;
 }
 
-.footer-section__img img {
+/* .footer-section__img img {
     height: 90%;
     max-width: 100%;
+} */
+.footer-logo{
+    height: 150px;
 }
-
 .footer-section__left {
     width: 300px;
     padding-top: 10px;
@@ -170,4 +172,32 @@
 
 .footer-section__text {
     font-size: 14px;
+}
+
+/* Юридический блок в футере */
+.footer-section__legal {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.legal-text {
+    font-size: 12px !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+    margin-bottom: 4px !important;
+    padding: 0 !important;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    .footer-section__legal {
+        margin-top: 15px;
+        padding-top: 12px;
+    }
+    
+    .legal-text {
+        font-size: 10px !important;
+    }
 }
